@@ -1,0 +1,23 @@
+<h1>Popular Pictures</h1>
+<ul class="popular">
+</ul>
+<h1><%= name %></h1>
+
+
+<input type="text" id="search" placeholder="Search"><br>
+
+<ul class="nav navbar-nav navbar-right">
+	<button id="myButton" class="submit-button" >Search</button>
+</ul>
+
+
+<span class="name"></span>
+<span class=tagline></span>
+<ul class="latest">
+</ul>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "/search/" + document.getElementById("search").value;
+    };
+</script>
